@@ -1,0 +1,58 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bg-dark-clr;
+
+  .container {
+    @include flexible(nowrap, row, center, baseline);
+  }
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+  
+// адрес
+
+.address {
+  margin-right: 70px;
+}
+ 
+.address-text {
+  margin-bottom: 9px;
+  @include fonts(14px, 400, 1.71, 0.03em);
+  color: $primary-white-clr;
+  font-style: normal;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-link {
+  display: inline-block;
+  @include fonts(14px, 400, 1.71, 0.03em);
+  color: $secondary-white-clr;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-clr;
+  }
+}
+
+// соцсети
+
+.footer-social {
+  margin-right: 93px;
+}
+
+.following-text {
+  display: inline-block;
+  margin-bottom: 20px;
+  @include fonts(14px, 700, 1.14, 0.03em);
+  color: $primary-white-clr;
+  text-transform: uppercase;
+}

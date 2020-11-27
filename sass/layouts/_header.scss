@@ -1,0 +1,16 @@
+.header {
+  background-color: $primary-white-clr;
+
+  .container {
+    display: flex;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: $line-clr;
+  }
+}
+
+
